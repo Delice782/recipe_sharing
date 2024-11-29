@@ -1,0 +1,124 @@
+
+/* Styling for the entire content area */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Styling for Header Section */
+header {
+    background-color:  #34495e; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the content box that holds recipe details */
+.content-box {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for the search box input field */
+.search-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.search-box input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for Recipe panels displaying individual recipe details */
+.recipe-panels {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe-panels:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.recipe-panels img {
+    width: 100%;
+    height: auto;
+}
+.recipe-panels h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.recipe-panels p {
+    padding: 0 10px;
+    color: #666;
+}
+.recipe-panels .recipe-rating {
+    color: #f39c12;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.recipe-panels .action-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.recipe-panels .action-btn:hover {
+    background-color: #218838;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .recipe-panels {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Media query for smartphones */
+@media (max-width: 480px) {
+    .recipe-panels {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color:  #34495e; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
