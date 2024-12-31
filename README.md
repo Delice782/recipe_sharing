@@ -5,7 +5,7 @@ A basic recipe-sharing platform where users can register, log in, share recipes,
 
 ---
 
-## Key Features (To Be Implemented in Future Submissions):
+## Key Features:
 1. **User Registration and Login**
    - Allow users to create an account and log in to the platform.
    - Secure password storage using hashing algorithms.
